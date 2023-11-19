@@ -1,0 +1,23 @@
+#import pandas module
+import pandas as pd
+import numpy as np
+
+#read the csv files into dataframes
+childcare_costs = pd.read_csv('/Users/briesposito/Desktop/childcare_project/childcare_costs.csv')
+counties = pd.read_csv('/Users/briesposito/Desktop/childcare_project/counties.csv')
+
+#view counties database
+print(counties.head(4))
+
+#to clean the data, first drop unecessary columns
+counties.drop(['state_abbreviation'], axis=1, inplace=True)
+
+#checking to make sure column was dropped
+print(counties.head(4))
+
+#view childcare costs database
+print(childcare_costs.head(100))
+
+#drop unecessary columns
+childcare_costs.drop(['pr_p', 'emp_n', 'memp_n', 'femp_n', 'emp_p', 'memp_p', 'femp_p'], axis=1, inplace=True)
+

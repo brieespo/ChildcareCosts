@@ -19,5 +19,33 @@ print(counties.head(4))
 print(childcare_costs.head(100))
 
 #drop unecessary columns
-childcare_costs.drop(['pr_p', 'emp_n', 'memp_n', 'femp_n', 'emp_p', 'memp_p', 'femp_p'], axis=1, inplace=True)
+childcare_costs.drop(['pr_p', 'unr_16', 'funr_16', 'munr_16', 'emp_n', 'memp_n', 'femp_n', 'emp_sales', 'memp_sales', 'femp_sales', 'femp_m', 'emp_p', 'emp_service', 'memp_p', 'memp_service', 'femp_service', 'femp_p'], axis=1, inplace=True)
 
+#rename confusing columns
+new_names = {'unr_20to64':'unemployed_20to64', 'funr_20to64':'fem_unemployed_20to64', 'munr_20to64':'male_unemployed_20to64', 'flfpr_20to64':'fem_labor_participation', 'flfpr_20to64_under6':'fem_labor_participation_childunder6', 'flfpr_20to64_6to17':'fem_labor_participation_child6to17', 'flfpr_20to64_under6_6to17':'fem_labor_participation_childunder6and17', 'mlfpr_20to64':'male_labor_participation', 'pr_f':'povery_rate_families', 'mhi_2018':'median_household_income_2018', 'me_2018':'median_earn_2018', 'fme_2018':'female_median_earn_2018', 'mme_2018':'male_median_earn_2018', 'mcsa':'weekly_med_center_cost','mfccsa':'weekly_med_famcare_cost','mc_infant':'weekly_med_center_cost_infant','mc_toddler':'weekly_med_center_cost_toddler','mc_preschool':'weekly_med_center_cost_preschool','mfcc_infant':'weekly_med_famcare_infant','mfcc_toddler':'weekly_med_famcare_toddler','mfcc_preschool':'weekly_med_famcare_preschool'}
+childcare_costs.rename(columns=new_names, inplace=True)
+print(childcare_costs.head(100))
+
+#merge dataframes, joining on the county_fips_code column
+childcare_merged = pd.merge(counties, childcare_costs)
+print(childcare_merged)
+
+#filter dataframe to include only the most recent year
+cc_merged_2018=childcare_merged.query("study_year == 2018")
+print(cc_merged_2018)
+
+#find the top 5 counties with the highest childcare center costs
+cc_merged_2018 = cc_merged_2018.sort_values('weekly_med_center_cost', ascending=False)
+print(cc_merged_2018.head(5))
+
+#find the top 5 counties with the highest family/home-based care costs
+cc_merged_2018 = cc_merged_2018.sort_values('weekly_med_famcare_cost', ascending=False)
+print(cc_merged_2018.head(5))
+
+#find the top 5 counties with the lowest employment rate for women with children under 6
+cc_merged_2018 = cc_merged_2018.sort_values('fem_labor_participation_childunder6', ascending=True)
+print(cc_merged_2018.head(5))
+
+#find the top 5 counties with the lowest median household income
+cc_merged_2018 = cc_merged_2018.sort_values('median_household_income_2018', ascending=True)
+print(cc_merged_2018.head(5))

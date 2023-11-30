@@ -8,29 +8,29 @@ I looked for correlations between the cost of center-based childcare and the emp
 ## Data Dictionary 
 |Column|Description|
 |------|------|
-|county_fips_code|Number that uniquely identifies the county in a state|
-|county_name|The full name of the county|
-|state_name|The full name of the state in which the county is found|
-|state_abbreviation|The two-letter state abbreviation|
-|study_year|Year the data collection began for the market rate survey|
-|unemployed_20to64|Unemployment rate of the population aged 20 to 64 years old|
-|fem_unemployed_20to64|Unemployment rate of the female population aged 20 to 64 years old|
-|male_unemployed_20to64|Unemployment rate of the male population aged 20 to 64 years old.|
-|fem_labor_participation_childunder6|Labor force participation rate of the female population aged 20 to 64 years old who have children under 6 years old|
-|fem_labor_participation_child6to17|Labor force participation rate of the female population aged 20 to 64 years old who have children between 6 and 17 years old|
-|fem_labor_participation_childunder6and17|Labor force participation rate of the female population aged 20 to 64 years old who have children under 6 years old and between 6 and 17 years old|
-|fem_labor_participation|Labor force participation rate of the female population aged 20 to 64 years old|
-|male_labor_participation|Labor force participation rate of the male population aged 20 to 64 years old|
-|povery_rate_families|Poverty rate for families|
-|median_household_income_2018|Median household income expressed in 2018 dollars|
-|median_earn_2018|Median earnings expressed in 2018 dollars|
-|female_median_earn_2018|Median earnings for females expressed in 2018 dollars|
-|male_median_earn_2018|Median earnings for males expressed in 2018|
-|total_pop|The total population for the given county|
-|weekly_med_center_cost|Weekly, full-time median price charged for Center-Based Care|
-|weekly_med_famcare_cost|Weekly, full-time median price charged for Family Childcare (at home care)|
-|weekly_med_center_cost_infant|Weekly, full-time median price charged for Center-based Care for infants (ages 0 through 23 months)|
-|weekly_med_center_cost_toddler|Weekly, full-time median price charged for Center-based Care for toddlers (ages 24 through 35 months)|
+|county_fips_code|number that uniquely identifies the county in a state|
+|county_name|full name of the county|
+|state_name|full name of the state in which the county is found|
+|state_abbreviation|two-letter state abbreviation|
+|study_year|year the data collection began for the market rate survey|
+|unemployed_20to64|unemployment rate of the population aged 20 to 64 years old|
+|fem_unemployed_20to64|unemployment rate of the female population aged 20 to 64 years old|
+|male_unemployed_20to64|unemployment rate of the male population aged 20 to 64 years old|
+|fem_labor_participation_childunder6|labor force participation rate of the female population aged 20 to 64 years old who have children under 6 years old|
+|fem_labor_participation_child6to17|labor force participation rate of the female population aged 20 to 64 years old who have children between 6 and 17 years old|
+|fem_labor_participation_childunder6and17|labor force participation rate of the female population aged 20 to 64 years old who have children under 6 years old and between 6 and 17 years old|
+|fem_labor_participation|labor force participation rate of the female population aged 20 to 64 years old|
+|male_labor_participation|labor force participation rate of the male population aged 20 to 64 years old|
+|povery_rate_families|poverty rate for families|
+|median_household_income_2018|median household income expressed in 2018 dollars|
+|median_earn_2018|median earnings expressed in 2018 dollars|
+|female_median_earn_2018|median earnings for females expressed in 2018 dollars|
+|male_median_earn_2018|median earnings for males expressed in 2018|
+|total_pop|total population for the given county|
+|weekly_med_center_cost|weekly, full-time median price charged for Center-Based Care|
+|weekly_med_famcare_cost|weekly, full-time median price charged for Family Childcare (at home care)|
+|weekly_med_center_cost_infant|weekly, full-time median price charged for Center-based Care for infants (ages 0 through 23 months)|
+|weekly_med_center_cost_toddler|weekly, full-time median price charged for Center-based Care for toddlers (ages 24 through 35 months)|
 |weekly_med_center_cost_preschool|weekly, full-time median price charged for Center-based Care for preschoolers (ages 36 through 54 months)|
 |weekly_med_famcare_infant|weekly, full-time median price charged for Family Childcare for infants|
 |weekly_med_famcare_toddler|weekly, full-time median price charged for Family Childcare for toddlers|

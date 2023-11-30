@@ -40,7 +40,7 @@ I looked for correlations between the cost of center-based childcare and the emp
 ### Capstone Requirements Met
 
 #### 1.) Read TWO data files:
-Two csv files, childcare_costs.csv and counties.csv, from the Department of Labor National Database of Childcare Prices: https://www.dol.gov/agencies/wb/topics/featured-childcare
+Two csv files, childcare_costs.csv and counties.csv, obtained from the Department of Labor National Database of Childcare Prices: https://www.dol.gov/agencies/wb/topics/featured-childcare
 
 #### 2.) Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.
 
@@ -48,7 +48,7 @@ I cleaned the data by eliminating some of the unnecessary columns and by renamin
 
 #### 3.) Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.
 
-I created a histogram of the full data for female employment rate's for women with children under the age of 6 to determine the validity of certain outlying data results and created a bar chart using seaborn for the top 20 counties/states for the same category.
+I created a histogram of the full data for female employment rate's for women with children under the age of 6 to determine the validity of certain outlying data results and created bar charts using seaborn analyzing the top 20 counties/states in categories of interest.
 
 #### 4.) Build a custom data dictionary and include it either in your README or as a separate document.
 

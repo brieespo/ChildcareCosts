@@ -1,27 +1,59 @@
-## National Childcare Costs 2018
+# National Childcare Costs 2018
+
+## Introduction and Overview
+For this project I looked at the Department of Labor's National Database of Childcare Prices. The data included a wide range of data about employment rates across genders for both non-parents and parents with children of specific ages, as well as childcare costs (both in-home and center-based) further broken down by age of the child. The DOL's data assigned county codes for each entry, which I cross references with a master county code list to get the county and state name for each entry to better contextualize the data.
+
+I looked for correlations between the cost of center-based childcare and the employment rate of women with children under the age of 6. I hypothesized that the more expensive center-based childcare was in a county, the lower the rate of employent for young mothers. Childcare cost is a huge barrier for parents, especially women who are often the default carer for young children due to discrepency between male and female pay for the same positions as well as factors such as loss of employment due to lack of adequate maternity leave and breastfeeding/pumping accomadations. 
+
+## Data Dictionary 
+|Column|Description|
+|------|------|
+|county_fips_code|Number that uniquely identifies the county in a state|
+|county_name|The full name of the county|
+|state_name|The full name of the state in which the county is found|
+|state_abbreviation|The two-letter state abbreviation|
+|study_year|Year the data collection began for the market rate survey|
+|unemployed_20to64|Unemployment rate of the population aged 20 to 64 years old|
+|fem_unemployed_20to64|Unemployment rate of the female population aged 20 to 64 years old|
+|male_unemployed_20to64|Unemployment rate of the male population aged 20 to 64 years old.|
+|fem_labor_participation_childunder6|Labor force participation rate of the female population aged 20 to 64 years old who have children under 6 years old|
+|fem_labor_participation_child6to17|Labor force participation rate of the female population aged 20 to 64 years old who have children between 6 and 17 years old|
+|fem_labor_participation_childunder6and17|Labor force participation rate of the female population aged 20 to 64 years old who have children under 6 years old and between 6 and 17 years old|
+|fem_labor_participation|Labor force participation rate of the female population aged 20 to 64 years old|
+|male_labor_participation|Labor force participation rate of the male population aged 20 to 64 years old|
+|povery_rate_families|Poverty rate for families|
+|median_household_income_2018|Median household income expressed in 2018 dollars|
+|median_earn_2018|Median earnings expressed in 2018 dollars|
+|female_median_earn_2018|Median earnings for females expressed in 2018 dollars|
+|male_median_earn_2018|Median earnings for males expressed in 2018|
+|total_pop|The total population for the given county|
+|weekly_med_center_cost|Weekly, full-time median price charged for Center-Based Care|
+|weekly_med_famcare_cost|Weekly, full-time median price charged for Family Childcare (at home care)|
+|weekly_med_center_cost_infant|Weekly, full-time median price charged for Center-based Care for infants (ages 0 through 23 months)|
+|weekly_med_center_cost_toddler|Weekly, full-time median price charged for Center-based Care for toddlers (ages 24 through 35 months)|
+|weekly_med_center_cost_preschool|weekly, full-time median price charged for Center-based Care for preschoolers (ages 36 through 54 months)|
+|weekly_med_famcare_infant|weekly, full-time median price charged for Family Childcare for infants|
+|weekly_med_famcare_toddler|weekly, full-time median price charged for Family Childcare for toddlers|
+|weekly_med_famcare_preschool|weekly, full-time median price charged for Family Childcare for preschoolers|
 
 
+### Capstone Requirements Met
 
-#This Project Includes
-
-1. Read TWO data files:
-
+#### 1.) Read TWO data files:
 Two csv files, childcare_costs.csv and counties.csv, from the Department of Labor National Database of Childcare Prices: https://www.dol.gov/agencies/wb/topics/featured-childcare
 
-2.) Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.  
+#### 2.) Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.
 
 I cleaned the data by eliminating some of the unnecessary columns and by renaming the very abbreviated column names with clearer titles for my project. I then merged the two dataframes on the "county_fips_code" column and eliminated outliers in the data after doing a histogram.
 
-3.) Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.
+#### 3.) Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.
 
 I created a histogram of the full data for female employment rate's for women with children under the age of 6 to determine the validity of certain outlying data results and created a bar chart using seaborn for the top 20 counties/states for the same category.
 
-4.) Build a custom data dictionary and include it either in your README or as a separate document. 
+#### 4.) Build a custom data dictionary and include it either in your README or as a separate document.
 
-I created a data dictionary (below.)
+I created a data dictionary for my renamed and edited columns in my merged table. 
 
+#### 5.) Annotate your code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
 
-5.) Annotate your code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
-
-I annotated my code each step of the way in Jupyter Notebook, showing my process and reasoning. 
-
+I annotated my code each step of the way in Jupyter Notebook, showing my process and reasoning.

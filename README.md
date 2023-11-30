@@ -21,5 +21,7 @@ I created a histogram of the full data for female employment rate's for women wi
 I created a data dictionary (below.)
 
 
-5.) I annotated my code each step of the way in Jupyter Notebook, showing my process and reasoning. 
+5.) Annotate your code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
+
+I annotated my code each step of the way in Jupyter Notebook, showing my process and reasoning. 
 

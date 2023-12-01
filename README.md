@@ -38,11 +38,11 @@ I looked for correlations between the cost of center-based childcare and the emp
 
 ### Instructions and Requirements
 1. Clone the Repo.
-2. Optionally, you can download anaconda [here](https://www.anaconda.com/download)
-3. Review the requirements.txt file included to view the packages I had installed.
+2. [Optional] Download the latest version of anaconda [here](https://www.anaconda.com/download)
+3. Review the requirements.txt file included to view the full list packages I had installed.
 4. Minimum package requirements are pandas, numpy, matplotlib.pyplot, and seaborn.
-5. If you wish, activate a virtual environment using "python3 -m venv venv" and install the required packages. 
-6. Download the .csv files and the .ipynb file.
+5. [Optional] Activate a virtual environment using "python3 -m venv venv" and install the required packages.
+6. If you do not have Jupyter Notebook installed, type pip install jupyterlab into the terminal. 
 7. Run Jupyter Notebook from the terminal by typing "Jupyter Notebook"
 8. You may now Run All or run each cell in the notebook individually (in order) as you interact with the notebook.
 
@@ -63,6 +63,9 @@ I created a histogram of the full data for female employment rate's for women wi
 
 I created a data dictionary for my renamed and edited columns in my merged table. 
 
-#### 5.) Annotate your code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
+#### 5.) Create a virtual environment. 
+I froze my pips to create a requirement folder and also included a virtual environment for those that alrady have conda installed. 
+
+#### 6.) Annotate your code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
 
 I annotated my code each step of the way in Jupyter Notebook, showing my process and reasoning.

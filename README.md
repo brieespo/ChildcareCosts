@@ -3,7 +3,7 @@
 ## Introduction and Overview
 For this project I looked at the Department of Labor's National Database of Childcare Prices. The data included a wide range of data about employment rates across genders for both non-parents and parents with children of specific ages, as well as childcare costs (both in-home and center-based) further broken down by age of the child. The DOL's data assigned county codes for each entry, which I cross references with a master county code list to get the county and state name for each entry to better contextualize the data.
 
-I looked for correlations between the cost of center-based childcare and the employment rate of women with children under the age of 6. I hypothesized that the more expensive center-based childcare was in a county, the lower the rate of employent for young mothers. Childcare cost is a huge barrier for parents, especially women who are often the default carer for young children due to discrepency between male and female pay for the same positions as well as factors such as loss of employment due to lack of adequate maternity leave and breastfeeding/pumping accommodations. 
+I looked for correlations between the cost of center-based childcare and the employment rate of women with children under the age of 6. I hypothesized that the more expensive center-based childcare was in a county, the lower the rate of employent for young mothers. Childcare cost is a huge barrier for parents, especially women who are often the default carer for young children due to discrepency between male and female pay for the same positions as well as factors such as loss of employment due to lack of adequate maternity leave and breastfeeding/pumping accommodations. Ultimately, this project was an exploratory analysis, but with such a rich data source I am sure I will be able to expand upon my current findings. 
 
 ## Data Dictionary 
 |Column|Description|
@@ -36,6 +36,15 @@ I looked for correlations between the cost of center-based childcare and the emp
 |weekly_med_famcare_toddler|weekly, full-time median price charged for Family Childcare for toddlers|
 |weekly_med_famcare_preschool|weekly, full-time median price charged for Family Childcare for preschoolers|
 
+### Instructions and Requirements
+1. Clone the Repo.
+2. Optionally, you can download anaconda [here](https://www.anaconda.com/download)
+3. Review the requirements.txt file included to view the packages I had installed.
+4. Minimum package requirements are pandas, numpy, matplotlib.pyplot, and seaborn.
+5. If you wish, activate a virtual environment using "python3 -m venv venv" and install the required packages. 
+6. Download the .csv files and the .ipynb file.
+7. Run Jupyter Notebook from the terminal by typing "Jupyter Notebook"
+8. You may now Run All or run each cell in the notebook individually (in order) as you interact with the notebook.
 
 ### Capstone Requirements Met
 

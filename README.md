@@ -42,7 +42,7 @@ I looked for correlations between the cost of center-based childcare and the emp
 3. Review the requirements.txt file included to view the packages I had installed.
 4. Minimum package requirements are pandas, numpy, matplotlib.pyplot, and seaborn.
 5. If you wish, activate a virtual environment using "python3 -m venv venv" and install the required packages. 
-6. Download the csv files and the ipynb file.
+6. Download the .csv files and the .ipynb file.
 7. Run Jupyter Notebook from the terminal by typing "Jupyter Notebook"
 8. You may now Run All or run each cell in the notebook individually (in order) as you interact with the notebook.
 
